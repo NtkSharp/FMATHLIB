@@ -15,7 +15,7 @@ public class FMATHLIB
     // gives back a vector where the values are complex numbers represented by a float array of lenght 2
 
 
-    public static float[,] FourierTransform(float[] InputSignal)
+    public static float[,] DFT(float[] InputSignal)
     {
         int SampleCount = InputSignal.Length;
         float SampleCountFloat = InputSignal.Length;
@@ -52,7 +52,7 @@ public class FMATHLIB
     // Note that we have implemented a complex multiplication where it takes two float arrays of lenght 2 and gives back
     // a float array of lenght two which represends the multiplication.
 
-    public static float[,] IFourierTransformation(float[,] InputSignal)
+    public static float[,] IDFT(float[,] InputSignal)
     {
         int SampleCount = InputSignal.GetLength(0);
         float SampleCountFloat = InputSignal.Length;
